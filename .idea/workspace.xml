@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added base django project files, db, created first application">
+    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added error 404 handler">
+      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/placesremember/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,6 +58,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python.Start_places.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -59,6 +67,11 @@
     "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\Places Remember\placesremember\places\templates\places" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Start_places" type="PythonConfigurationType" factoryName="Python">
       <module name="Places Remember" />
@@ -124,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716535019642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added error 404 handler">
+      <option name="closed" value="true" />
+      <created>1716537003144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716537003144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +164,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Little change" />
     <MESSAGE value="Added base django project files, db, created first application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added base django project files, db, created first application" />
+    <MESSAGE value="Added error 404 handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added error 404 handler" />
   </component>
 </project>

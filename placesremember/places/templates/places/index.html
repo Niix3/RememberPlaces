@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+<p>
+    На этом сайте вы сможете записывать посещенные места и отзывы о них
+</p>
+<p>Вы ещё не зарегистрированы</p>
+<a href="{% url 'registration' %}">
+    <button type="button">Зарегистрироваться</button>
+</a>
+{%endblock%}
