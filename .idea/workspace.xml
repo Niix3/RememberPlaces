@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Initial commit">
+    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Little change">
+      <change afterPath="$PROJECT_DIR$/placesremember/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Places Remember.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Places Remember.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/placesremember/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/placesremember/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +28,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Niix3&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f62849c-a47d-48de-a0bf-34f44f3c2600" />
+        <option name="url" value="https://github.com/Niix3/RememberPlaces" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2gjy3SsbTlGH8ZzJt65OcJQkK2s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -56,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716225629713</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Little change">
+      <option name="closed" value="true" />
+      <created>1716226374754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716226374754</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,7 +109,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Little change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little change" />
   </component>
 </project>
