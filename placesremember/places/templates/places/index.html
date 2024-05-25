@@ -1,10 +1,11 @@
 {%extends 'base.html'%}
+{% load static%}
 {%block content%}
-<p>
-    На этом сайте вы сможете записывать посещенные места и отзывы о них
-</p>
-<p>Вы ещё не зарегистрированы</p>
-<a href="{% url 'registration' %}">
-    <button type="button">Зарегистрироваться</button>
-</a>
+    <section class="u-clearfix u-section-1" id="sec-2b86">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1"> Map Your Journey: Capture, Share, and Celebrate Your Life's Locations</p>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'places/images/8f3783b90277480ffefd57eb74a28bb6.jpg' %}" alt="" data-image-width="2016" data-image-height="1512">
+      </div>
+    </section>
+
 {%endblock%}

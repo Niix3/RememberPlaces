@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added error 404 handler">
-      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placesremember/templates/base.html" afterDir="false" />
+    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added template with menu for HTML pages">
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/css/nicepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/css/Главная.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/images/8f3783b90277480ffefd57eb74a28bb6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/js/nicepage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/placesremember/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,18 +56,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.Start_places.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/Places Remember/placesremember",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Start_places.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/Places Remember/placesremember&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\Places Remember\placesremember\places\templates\places" />
@@ -145,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716537003144</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added template with menu for HTML pages">
+      <option name="closed" value="true" />
+      <created>1716555588092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716555588092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +174,7 @@
     <MESSAGE value="Little change" />
     <MESSAGE value="Added base django project files, db, created first application" />
     <MESSAGE value="Added error 404 handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added error 404 handler" />
+    <MESSAGE value="Added template with menu for HTML pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added template with menu for HTML pages" />
   </component>
 </project>
