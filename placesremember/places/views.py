@@ -18,7 +18,7 @@ def registration(request):
     return render(request,'places/reg.html',context=data)
 
 def usrpage(request):
-    data = {'title':"Ваша страница"}
+    data = {'title':"Моя страница"}
     return render(request,'places/index.html',context=data)
 def page_not_found(request, exception):
     return HttpResponseNotFound("<h1>Страница не найдена!!!</h1>")
