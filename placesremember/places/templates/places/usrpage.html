@@ -1,0 +1,7 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block menu%}
+{% if user.is_authenticated %}
+          <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'logout'%}">Выйти из аккаунта</a></li>
+{% endif %}
+{%endblock%}

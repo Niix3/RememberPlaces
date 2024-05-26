@@ -36,16 +36,21 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'home'%}" style="padding: 28px 20px;">Главная</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'about'%}" padding: 28px 20px;">О сайте</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"  href="{% url 'usrpage'%}" style="padding: 28px 20px;">Моя страница</a>
-</li></ul>
+</li>{% if user.is_authenticated %}
+                {%if write_username%}<li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"  href="{% url 'usrpage'%}" style="padding: 28px 20px;">Здравствуйте, {{ user.username }}</a>
+                {%else%}
+                <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"  href="{% url 'usrpage'%}" style="padding: 28px 20px;">Моя страница</a>
+                    {%endif%}
+                    {%endif%}
+</li>{%block menu%} {%endblock%}</ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link"href="{% url 'home'%}">Главная</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about'%}">О нас</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'usrpage'%}">Моя страница</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about'%}">О сайте</a>
+{% if user.is_authenticated %}</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'usrpage'%}">Моя страница</a>{%endif%}
 </li></ul>
               </div>
             </div>

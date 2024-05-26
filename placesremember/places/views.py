@@ -1,6 +1,8 @@
-from django.http import HttpResponse, HttpResponseNotFound
-from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponsePermanentRedirect
+from django.shortcuts import render,redirect
 from django.template.loader import render_to_string
+from django.contrib.auth import authenticate, login,logout
+from .forms import LoginForm,UserRegistrationForm
 # Create your views here.
 
 def index(request): #HTTP request
@@ -18,7 +20,54 @@ def registration(request):
     return render(request,'places/reg.html',context=data)
 
 def usrpage(request):
-    data = {'title':"Моя страница"}
-    return render(request,'places/index.html',context=data)
+    data = {'title':"Моя страница",'write_username':True}
+    return render(request,'places/usrpage.html',context=data)
+
+
+
+def user_login(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            user = authenticate(request,
+                                username=cd['username'],
+                                password=cd['password'])
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                    return redirect('usrpage')
+                else:
+                    return HttpResponse('Disabled account')
+            else:
+                return HttpResponse('Invalid login')
+    else:
+        form = LoginForm()
+    return render(request, 'places/login.html', {'title':'Вход в аккаунт','form': form})
+
+
+
+def register(request):
+    if request.method == 'POST':
+        user_form = UserRegistrationForm(request.POST)
+        if user_form.is_valid():
+            # Create a new user object but avoid saving it yet
+            new_user = user_form.save(commit=False)
+            # Set the chosen password
+            new_user.set_password(
+            user_form.cleaned_data['password'])
+            # Save the User object
+            new_user.save()
+            return redirect('home')
+    else:
+        user_form = UserRegistrationForm()
+    return render(request,
+        'places/reg.html',
+        {'user_form': user_form})
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
 def page_not_found(request, exception):
     return HttpResponseNotFound("<h1>Страница не найдена!!!</h1>")

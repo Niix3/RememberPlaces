@@ -5,7 +5,12 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-text u-text-default u-text-1"> Map Your Journey: Capture, Share, and Celebrate Your Life's Locations</p>
         <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'places/images/8f3783b90277480ffefd57eb74a28bb6.jpg' %}" alt="" data-image-width="2016" data-image-height="1512">
-        <p class="u-text u-text-default u-text-1"> <a href="{% url 'social:begin' 'vk-oauth2' %}">Зайти через Вконтакте</a></p>
+          {% if user.is_authenticated %}
+        {% else %}
+            <p class="u-text u-text-default u-text-1"> <a href="{% url 'social:begin' 'vk-oauth2' %}">Войти с помощью VK</a></p>
+            <p class="u-text u-text-default u-text-1"> <a href="{% url 'login' %}">Войти</a></p>
+            <p class="u-text u-text-default u-text-1"> <a href="{% url 'register' %}">Зарегистрироваться</a></p>
+        {%endif%}
       </div>
     </section>
 {%endblock%}

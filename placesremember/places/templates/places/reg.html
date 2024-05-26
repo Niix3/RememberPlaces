@@ -1,3 +1,9 @@
-{%extends 'base.html'%}
-{%block content%}
-{%endblock%}
+{% extends "base.html" %}
+{% block content %}
+<p>Заполните форму регистрации:</p>
+ <form method="post">
+ {{ user_form.as_p }}
+ {% csrf_token %}
+ <p><input type="submit" value="Создать аккаунт"></p>
+ </form>
+{% endblock %}
