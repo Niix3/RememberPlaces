@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-zd%w&y3hj87eb5dt#0p@ii(#@jvyu5-438&hnd108=&63q=@qh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,9 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'places.apps.PlacesConfig',
+    'social_django',
 ]
 
 MIDDLEWARE = [
+    'social_django.middleware.SocialAuthExceptionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -103,7 +106,28 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = [
+ 'django.contrib.auth.backends.ModelBackend',
+ 'social_core.backends.vk.VKOAuth2',
+]
 
+SOCIAL_AUTH_VK_OAUTH2_KEY = '51930559'
+#SOCIAL_AUTH_VK_OAUTH2_KEY = 'YJPT2uJS86aozgV6hq2l'
+#SOCIAL_AUTH_VK_OAUTH2_SECRET = 'YJPT2uJS86aozgV6hq2l'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = '190271761902717619027176101a1a14c911902190271767f538de4315259137b717269'
+SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['first_name','last_name']
+
+SOCIAL_AUTH_PIPELINE = [
+ 'social_core.pipeline.social_auth.social_details',
+ 'social_core.pipeline.social_auth.social_uid',
+ 'social_core.pipeline.social_auth.auth_allowed',
+ 'social_core.pipeline.social_auth.social_user',
+ 'social_core.pipeline.user.get_username',
+ 'social_core.pipeline.user.create_user',
+ 'social_core.pipeline.social_auth.associate_user',
+ 'social_core.pipeline.social_auth.load_extra_data',
+ 'social_core.pipeline.user.user_details',
+]
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 

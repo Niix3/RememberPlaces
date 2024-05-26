@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added some css,js,pictures">
-      <change afterPath="$PROJECT_DIR$/placesremember/places/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added admin user">
+      <change afterPath="$PROJECT_DIR$/placesremember/cert.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/cert.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/placesremember/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,24 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.Start_places.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/Places Remember/placesremember",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Start_places.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/Places Remember/placesremember&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\Places Remember\placesremember\places\templates\places" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Start_places">
     <configuration name="Start_places" type="PythonConfigurationType" factoryName="Python">
       <module name="Places Remember" />
       <option name="ENV_FILES" value="" />
@@ -97,6 +95,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Start_with_HTTPS" type="PythonConfigurationType" factoryName="Python">
+      <module name="Places Remember" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Places Remember)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="manage.py" />
+      <option name="PARAMETERS" value="runserver_plus --cert-file cert.crt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Start_places" />
+      <item itemvalue="Python.Start_with_HTTPS" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -162,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716635302087</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added admin user">
+      <option name="closed" value="true" />
+      <created>1716649274770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716649274770</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +217,7 @@
     <MESSAGE value="Added error 404 handler" />
     <MESSAGE value="Added template with menu for HTML pages" />
     <MESSAGE value="Added some css,js,pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some css,js,pictures" />
+    <MESSAGE value="Added admin user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added admin user" />
   </component>
 </project>
