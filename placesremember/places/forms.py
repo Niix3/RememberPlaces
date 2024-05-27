@@ -1,5 +1,9 @@
 from django import forms
 from django.contrib.auth.models import User
+
+from places.models import locations
+
+
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
@@ -18,3 +22,9 @@ class UserRegistrationForm(forms.ModelForm):
         if cd['password'] != cd['password2']:
             raise forms.ValidationError('Passwords don\'t match.')
         return cd['password2']
+
+
+class YourModelForm(forms.ModelForm):
+    class Meta:
+        model = locations
+        fields = ['name', 'adress', 'comments']

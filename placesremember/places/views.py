@@ -1,8 +1,10 @@
+from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponsePermanentRedirect
 from django.shortcuts import render,redirect
 from django.template.loader import render_to_string
 from django.contrib.auth import authenticate, login,logout
 from .forms import LoginForm,UserRegistrationForm
+from .models import locations
 # Create your views here.
 
 def index(request): #HTTP request
@@ -19,8 +21,11 @@ def registration(request):
     data = {'title': "Регистрация"}
     return render(request,'places/reg.html',context=data)
 
-def usrpage(request):
-    data = {'title':"Моя страница",'write_username':True}
+
+def usrpage(request,user_id):
+    user = User.objects.get(id=user_id)
+    mymodels = locations.objects.filter(user_owner=user)
+    data = {'title':"Моя страница",'write_username':True, 'user': user, 'mymodels': mymodels}
     return render(request,'places/usrpage.html',context=data)
 
 
@@ -36,7 +41,7 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect('usrpage')
+                    return redirect('usrpage',user.id)
                 else:
                     return HttpResponse('Disabled account')
             else:

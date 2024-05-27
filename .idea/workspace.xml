@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added vk authorization(doesn't work cause of HTTTPS protocol)">
-      <change afterPath="$PROJECT_DIR$/placesremember/places/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placesremember/places/templates/places/usrpage.html" afterDir="false" />
+    <list default="true" id="3ec72ae6-c371-4e80-a43f-b569adbfa1d8" name="Changes" comment="Added registration,login,userpage">
+      <change afterPath="$PROJECT_DIR$/placesremember/places/migrations/0002_auto_20240527_1448.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/migrations/0003_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/migrations/0004_locations_user_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placesremember/places/static/places/images/вектор-значка-профиля-аватары-по-умолчанию-социальные-медиа-182145777.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/placesremember/places/templates/places/usrpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/templates/places/usrpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/places/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/places/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/placesremember/placesremember/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/placesremember/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/placesremember/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/placesremember/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,19 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.Start_places.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/Places Remember/placesremember&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Start_places.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/Places Remember/placesremember/places/static/places/js",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\Places Remember\placesremember\places\static\places\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\Places Remember\placesremember\places\templates\places" />
     </key>
@@ -207,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716710159693</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added registration,login,userpage">
+      <option name="closed" value="true" />
+      <created>1716750868047</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716750868047</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +244,7 @@
     <MESSAGE value="Added some css,js,pictures" />
     <MESSAGE value="Added admin user" />
     <MESSAGE value="Added vk authorization(doesn't work cause of HTTTPS protocol)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added vk authorization(doesn't work cause of HTTTPS protocol)" />
+    <MESSAGE value="Added registration,login,userpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added registration,login,userpage" />
   </component>
 </project>

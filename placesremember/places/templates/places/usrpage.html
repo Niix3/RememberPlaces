@@ -1,7 +1,50 @@
+
 {%extends 'base.html'%}
 {% load static%}
 {%block menu%}
+<li class="u-nav-item"><img class="вектор-значка-профиля-аватары-по-умолчанию-социальные-медиа-182145777" src="{% static 'places/images/вектор-значка-профиля-аватары-по-умолчанию-социальные-медиа-182145777.webp' %}"
+     width="50" height="50"</li>
 {% if user.is_authenticated %}
           <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'logout'%}">Выйти из аккаунта</a></li>
 {% endif %}
 {%endblock%}
+{%block content%}
+
+    {% if mymodels %}
+<h1 align="center">Ваши места</h1>
+<div align="center"><button>Добавить новую запись</button></div>
+<div align="center">
+        <table border="1">
+      <thead>
+        <tr>
+          <th>Название места</th>
+          <th>Адресс</th>
+          <th>Широта</th>
+            <th>Долгота</th>
+            <th>Комментарий</th>
+        </tr>
+      </thead>
+            <tbody>
+    {%endif%}
+    {% for mymodel in mymodels %}
+    <tr>
+      <td>{{ mymodel.name }}</td>
+      <td>{{ mymodel.adress }}</td>
+      <td>{{ mymodel.lat }}</td>
+         <td>{{ mymodel.lng }}</td>
+         <td>{{ mymodel.comments }}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+        </div>
+{%empty %}
+<div style="text-align: center;">
+    У вас нет ни одного воспоминания
+<button>Добавить новую запись</button>
+</div>
+{% endfor %}
+
+{%endblock%}
+</body>
